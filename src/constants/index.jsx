@@ -68,7 +68,7 @@ export const checklistItems = [
       "We leverage the latest industry tools and methodologies to deliver accurate, high-quality results that exceed industry standards.",
   },
   {
-    title: "Faster Turnaround with Detailed Reportinghare work in minutes",
+    title: "Faster Turnaround with Detailed Reporting",
     description:
       "Get actionable insights faster with our efficient testing processes and in-depth reports, empowering you to fix vulnerabilities swiftly and stay ahead of threats.",
   },
