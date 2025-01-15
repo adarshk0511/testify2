@@ -53,24 +53,24 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: "Code merge made easy",
+    title: "Comprehensive Security Coverage",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "We provide end-to-end testing across web apps, mobile apps, APIs, networks, and IoT devices, ensuring every potential vulnerability is addressed.",
   },
   {
-    title: "Review code without worry",
+    title: "Expertly Tailored Testing Solutions",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Our testing strategies are customized to meet the unique needs of your business, providing a more relevant and effective security audit.",
   },
   {
-    title: "AI Assistance to reduce time",
+    title: "Cutting-Edge Tools & Techniques",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "We leverage the latest industry tools and methodologies to deliver accurate, high-quality results that exceed industry standards.",
   },
   {
-    title: "Share work in minutes",
+    title: "Faster Turnaround with Detailed Reportinghare work in minutes",
     description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
+      "Get actionable insights faster with our efficient testing processes and in-depth reports, empowering you to fix vulnerabilities swiftly and stay ahead of threats.",
   },
 ];
 
