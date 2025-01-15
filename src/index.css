@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins" , sans-serif;
+  color-scheme: dark;
+  background-image: url('/src/assets/aaabstract.webp');
+  background-size: cover; /* Ensure the SVG covers the whole page */
+  background-position: center;
+  background-repeat: no-repeat; /* Prevent repetition of the background */
+} 
+
+@media (max-width: 768px) {
+  :root {
+   
+    background-size: contain; /* Makes sure the SVG fits within the screen size */
+    background-position: top;
+    
+  }
+}
+/* hero section animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-move {
+  animation: gradientBG 1s ease-out infinite;
+}
+
+@keyframes subtlePulse {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #ff8c42, 
+      0 0 10px #ffa857, 
+      0 0 15px #ffae42;
+  }
+  50% {
+    text-shadow: 
+      0 0 8px #ff8c42, 
+      0 0 12px #ffa857, 
+      0 0 20px #ffae42;
+  }
+}
+
+.glow-subtle-pulse {
+  background-image: linear-gradient(120deg, #ff7a18, #ff8c42, #ffa857, #ffd089, #ffae42);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 
+    0 0 5px #ff8c42, 
+    0 0 10px #ffa857, 
+    0 0 15px #ffae42;
+  animation: subtlePulse 3s ease-in-out infinite;
+}
+
+.mix-fluid {
+  mix-blend-mode: overlay;
+  background-blend-mode: screen;
+}
