@@ -130,3 +130,10 @@ export const communityLinks = [
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
 ];
+export const infoLinks = [
+  { href: "#", text: "About Us" },
+  { href: "#", text: "Contact Us" },
+  { href: "#", text: "Partnership" },
+  { href: "#", text: "Case Studies" },
+  { href: "#", text: "Jobs" },
+];
