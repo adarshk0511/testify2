@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div className="h-[200px]">
           <div className="flex items-center flex-shrink-0">
-            <img className="h-20 w-20" src={logo} alt="" srcset="" />
+            <img className="h-20 w-26" src={logo} alt="" srcset="" />
             <span className="text-5xl font-semibold "> Testify</span>
           </div>
           <div className="flex text-md mt-5 hidden sm:flex">
