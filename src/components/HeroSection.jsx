@@ -4,9 +4,9 @@ const HeroSection = () => {
   return (
     <div className='flex flex-col items-center mt-6 lg:mt-20 pb-15' >
         <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide"> 
-            Test your software with <span className='bg-gradient-to-r from-yellow-400 to-orange-700 text-transparent bg-clip-text  font-bold text-8xl animate-gradient-move' style={{
+            Build your dreams with <span className='bg-gradient-to-r from-yellow-400 to-orange-700 text-transparent bg-clip-text  font-bold text-8xl animate-gradient-move' style={{
     backgroundSize: '200% 200%',
-  }}>Testify</span> 
+  }}>Hastrix</span> 
         </h1>
         <p className='mt-10 text-lg text-center text-neutral-400 max-w-4xl'>Empower your business with cutting-edge testing solutions tailored to secure your applications, networks, and devices. 
         Our comprehensive pentesting services help you stay ahead of threats and ensure robust security for your digital assets.</p>

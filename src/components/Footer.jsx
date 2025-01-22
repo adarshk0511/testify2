@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           <div className="flex text-md mt-5 hidden sm:flex">
             {" "}
-            Testify is a trusted partner in software testing, specializing in
+            Hastrix is a trusted partner in software testing, specializing in
             robust penetration testing and quality assurance services.
           </div>
         </div>

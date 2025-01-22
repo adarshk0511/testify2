@@ -1,15 +1,19 @@
 import { GlobeLock } from "lucide-react";
-import {AppWindow} from "lucide-react"
-import { TabletSmartphone } from 'lucide-react';
-import { MonitorCog } from 'lucide-react';
-import { CloudCog } from 'lucide-react';
-import { Radio } from 'lucide-react';
+import { AppWindow } from "lucide-react";
+import { TabletSmartphone } from "lucide-react";
+import { MonitorCog } from "lucide-react";
+import { CloudCog } from "lucide-react";
+import { Radio } from "lucide-react";
+import { Wrench } from "lucide-react";
+import { ShieldEllipsis } from 'lucide-react';
+import { BrainCircuit } from 'lucide-react';
+import { ScreenShare } from 'lucide-react';
+import TestService from "../pages/TestService";
 
 export const navItems = [
-  { label: "About us", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Contact us", href: "#" },
+  { label: "About us", to: "workflow" },
+  { label: "Services", to: "services" },
+  { label: "Pricing", to: "pricing" },
 ];
 
 export const features = [
@@ -53,24 +57,24 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: "Comprehensive Security Coverage",
+    title: "Innovative Expertise",
     description:
-      "We provide end-to-end testing across web apps, mobile apps, APIs, networks, and IoT devices, ensuring every potential vulnerability is addressed.",
+      "We combine AI, ML, engineering, and IT to deliver cutting-edge solutions that solve complex challenges and drive impactful results.",
   },
   {
-    title: "Expertly Tailored Testing Solutions",
+    title: "Global Reach",
     description:
-      "Our testing strategies are customized to meet the unique needs of your business, providing a more relevant and effective security audit.",
+      "We serve clients not only in India but also across international markets, providing solutions that meet diverse needs and drive success globally.",
   },
   {
-    title: "Cutting-Edge Tools & Techniques",
+    title: "Comprehensive Services",
     description:
-      "We leverage the latest industry tools and methodologies to deliver accurate, high-quality results that exceed industry standards.",
+      "From 3D modeling to AI integration, we offer a full spectrum of services that address all your business needs and help you stay ahead in a competitive market.",
   },
   {
-    title: "Faster Turnaround with Detailed Reporting",
+    title: "Client-Centric Approach",
     description:
-      "Get actionable insights faster with our efficient testing processes and in-depth reports, empowering you to fix vulnerabilities swiftly and stay ahead of threats.",
+      "We provide solutions tailored to your unique goals and challenges, ensuring that each strategy is aligned with your business vision and objectives.",
   },
 ];
 
@@ -136,4 +140,41 @@ export const infoLinks = [
   { href: "#", text: "Partnership" },
   { href: "#", text: "Case Studies" },
   { href: "#", text: "Jobs" },
+];
+
+export const serviceLink = [
+  {
+    icon: <ScreenShare />,
+    title: "IT Solutions",
+    description:
+      "We offer development and management of IT infrastructure, custom software solutions for engineering and manufacturing, and end-to-end IT support tailored to meet your business requirements.",
+    href: "ITService.jsx",
+    ele: <TestService/>
+  },
+  {
+    icon: <ShieldEllipsis />,
+    title: "Cybersecurity Solutions",
+    description:
+      "Comprehensive protection against cyber threats through security assessments, risk analysis, continuous monitoring, safeguarding sensitive data, and ensuring compliance.",
+    href: "/testify2/testService",
+    ele: <TestService/>
+  },
+  {
+    icon: <Wrench />,
+    title: "Engineering Design & Project Engineering",
+    description:
+      "We provide customized engineering designs and drafting solutions, comprehensive project engineering support for seamless execution, and specialized expertise in manufacturing equipment for the oil and gas sector and beyond.",
+    href: "/src/pages/TestService.jsx",
+    ele: <TestService/>
+  },
+ 
+  {
+    icon: <BrainCircuit />,
+    title: "Artificial Intelligence (AI) & Machine Learning (ML)",
+    description:
+      "AI-driven solutions for process optimization, tailored ML models, predictive analytics for enhanced efficiency, and seamless integration of AI/ML technologies into existing business workflows.",
+    href: "AIService.jsx",
+    ele: <TestService/>
+  },
+ 
 ];
