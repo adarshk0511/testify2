@@ -19,7 +19,7 @@ const SubNavbar = () => {
                     <img className='h-13 w-14 mr-2 ' src={logo} alt="" />
                     
                     <span className="text-4xl tracking-tight font-semibold">
-                        Testify
+                        Hastrix
                     </span>
                 </div>
                 <Link to="../testify2" className='hidden lg:flex ml-14 space-x-12'>

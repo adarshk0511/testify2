@@ -8,7 +8,10 @@ import { Wrench } from "lucide-react";
 import { ShieldEllipsis } from 'lucide-react';
 import { BrainCircuit } from 'lucide-react';
 import { ScreenShare } from 'lucide-react';
-import TestService from "../pages/TestService";
+import { UserPen } from 'lucide-react';
+import { Link } from 'lucide-react';
+import { Box } from 'lucide-react';
+
 
 export const navItems = [
   { label: "About us", to: "workflow" },
@@ -148,8 +151,8 @@ export const serviceLink = [
     title: "IT Solutions",
     description:
       "We offer development and management of IT infrastructure, custom software solutions for engineering and manufacturing, and end-to-end IT support tailored to meet your business requirements.",
-    href: "ITService.jsx",
-    ele: <TestService/>
+    href: "/testify2/testService",
+    // ele: <TestService/>
   },
   {
     icon: <ShieldEllipsis />,
@@ -157,15 +160,15 @@ export const serviceLink = [
     description:
       "Comprehensive protection against cyber threats through security assessments, risk analysis, continuous monitoring, safeguarding sensitive data, and ensuring compliance.",
     href: "/testify2/testService",
-    ele: <TestService/>
+    // ele: <TestService/>
   },
   {
     icon: <Wrench />,
     title: "Engineering Design & Project Engineering",
     description:
       "We provide customized engineering designs and drafting solutions, comprehensive project engineering support for seamless execution, and specialized expertise in manufacturing equipment for the oil and gas sector and beyond.",
-    href: "/src/pages/TestService.jsx",
-    ele: <TestService/>
+    href: "/testify2/enggService",
+    // ele: <EnggService/>
   },
  
   {
@@ -174,7 +177,28 @@ export const serviceLink = [
     description:
       "AI-driven solutions for process optimization, tailored ML models, predictive analytics for enhanced efficiency, and seamless integration of AI/ML technologies into existing business workflows.",
     href: "AIService.jsx",
-    ele: <TestService/>
+    // ele: <TestService/>
   },
- 
+];
+
+export const enggLink = [
+    {
+      icon: <UserPen />,
+      text: "Project Management",
+      description:
+        "Comprehensive project planning and execution with risk management, cost optimization, timeline control, and seamless coordination across all stages.",
+    },
+    {
+      icon: <Link />,
+      text: "Supply Chain Support",
+      description:
+        "Reliable supply chain solutions with strategic sourcing of engineered materials, procurement, and logistics management for domestic and international clients.",
+    },
+    {
+      icon: <Box />,
+      text: "3D Modeling & Visualization",
+      description:
+        "Advanced 3D modeling and high-quality rendering for accurate visualization, delivering detailed designs to streamline engineering and manufacturing processes.",
+    },
+  
 ];
