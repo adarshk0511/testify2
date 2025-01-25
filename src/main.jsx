@@ -6,6 +6,8 @@ import TestService from "./pages/TestService.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import EnggService from './pages/EnggService.jsx';
 import Landing from './pages/Landing.jsx';
+import Login from './pages/Login.jsx';
+import SignUp from './pages/SignUp.jsx';
 // Define routes
 
 const router = createBrowserRouter([
@@ -21,6 +23,15 @@ const router = createBrowserRouter([
     path: "/testify2/enggService",
     element: <EnggService />,
   },
+  {
+    path: "/testify2/login",
+    element: <Login/>,
+  },
+  {
+    path: "/testify2/signup",
+    element: <SignUp/>,
+  },
+
 ]);
 
 
