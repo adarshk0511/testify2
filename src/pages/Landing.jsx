@@ -207,9 +207,8 @@ const Landing = () => {
             ))}
           </div>
         </div>
+        <Footer />
       </div>
-
-      <Footer />
     </>
   );
 };
