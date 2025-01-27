@@ -171,7 +171,7 @@ const Landing = () => {
           <div className="flex flex-wrap">
             {pricingOptions.map((option, index) => (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
-                <div className="p-10 border border-neutral-700 rounded-xl hover:animate-glow">
+                <div className={`p-10 border border-neutral-700 rounded-xl ${option.title == 'Pro' ? "animate-glow-infinite" : "hover:animate-glow" }`}>
                   <p className="text-4xl mb-8">
                     {option.title}
                     {option.title === "Pro" && (
