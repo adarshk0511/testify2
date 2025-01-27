@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { features } from '../constants'
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,11 +7,15 @@ import Footer from '../components/Footer'
 
 
 const TestService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
+
   return (
   <>
     <SubNavbar />
-    <div className="max-w-7xl mx-auto pt-20 px-6">
-         <div className='relative mt-5 border-b border-neutral-800 min-h-[800px]'>
+    <div className="max-w-7xl max-h-5xl mx-auto pt-20 px-6">
+         <div className='relative mt-5 min-h-[500px]'>
       <div className="text-center">
         <span className='bg-neutral-900 text-orange-500 rounded-md h-6 text-lg font-medium px-2 py-1 uppercase'>
         Discover Our Services

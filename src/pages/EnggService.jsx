@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { enggLink } from '../constants'
 import SubNavbar from '../components/SubNavbar'
 import Footer from '../components/Footer'
 
 const EnggService = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
+
   return (
     <>
     <SubNavbar />
