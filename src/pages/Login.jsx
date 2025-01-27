@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from 'react'
 import login from "../assets/login.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
@@ -7,6 +7,9 @@ import Footer from "../components/Footer";
 
 
 const Login = () => {
+  useEffect(() => {
+      window.scrollTo(0, 0); // Scroll to the top of the page
+    }, []);
     return (
       <>
       <SubNavbar/>
@@ -82,7 +85,9 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <Footer/>
+        <div className="max-w-7xl mx-auto px-6" >
+        <Footer />
+        </div >
       </>
         
       );
