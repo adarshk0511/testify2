@@ -5,6 +5,9 @@ import React from 'react'
 import logo from "../assets/logo.png"
 import { navItems} from "../constants/index"
 import { Link } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
+
 const Navbar = () => {
 
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -25,7 +28,7 @@ const Navbar = () => {
                 <ul className='hidden lg:flex ml-14 space-x-12'>
                     {navItems.map((items,index) =>(
                       <li key={index}>
-                      <Link
+                      <ScrollLink
                         to={items.to}
                         smooth={true}
                         duration={500}
@@ -33,17 +36,17 @@ const Navbar = () => {
                         className="cursor-pointer"
                       >
                         {items.label}
-                      </Link>
+                      </ScrollLink>
                     </li>
                     ) )}
                 </ul>
                 <div className="hidden lg:flex justify-center space-x-12 items-center">
-                    <a href="/testify2/login" className='py-2 px-3 border rounded-md'>
+                    <RouterLink to="/testify2/login" className='py-2 px-3 border rounded-md'>
                         Sign In
-                    </a>
-                    <a href="/testify2/signup" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
+                    </RouterLink>
+                    <RouterLink to="/testify2/signup" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
                         Create an Account
-                    </a>
+                    </RouterLink>
                 </div>
                 <div className="lg:hidden md:flex flex-col justify-end">
                     <button onClick={toggleNavbar}>
