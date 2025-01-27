@@ -74,7 +74,7 @@ const Landing = () => {
               <div key={index} className="w-full sm:1/2 lg:w-1/2 p-4">
                 <Link
                   to={feature.href}
-                  className="flex rounded-lg border border-neutral-700  shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:border-orange-500 hover:ring-4 hover:ring-orange-500/80 hover:ring-offset-2 hover:ring-offset-neutral-900"
+                  className="flex rounded-lg border border-neutral-700  shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:border-orange-500 hover:ring-4 hover:ring-orange-500/80 hover:ring-offset-2 hover:ring-offset-neutral-900 hover:animate-glow"
                 >
                   <div className="flex mt-5 mx-6 h-[200px] w-[200px] sm:h-[50px] sm:w-[150px] bg-neutral-900 text-orange-700 justify-center items-center rounded">
                     {feature.icon}
@@ -171,7 +171,7 @@ const Landing = () => {
           <div className="flex flex-wrap">
             {pricingOptions.map((option, index) => (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
-                <div className="p-10 border border-neutral-700 rounded-xl">
+                <div className="p-10 border border-neutral-700 rounded-xl hover:animate-glow">
                   <p className="text-4xl mb-8">
                     {option.title}
                     {option.title === "Pro" && (
@@ -198,7 +198,7 @@ const Landing = () => {
                   </ul>
                   <a
                     href=""
-                    className="inline-flex justify-center items-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-gradient-to-r from-orange-500 to-orange-900 border border-orange-400 rounded-lg transition duration-200"
+                    className="inline-flex justify-center items-center w-full h-12 p-5 mt-20 tracking-tight text-xl hover:bg-gradient-to-r from-orange-500 to-orange-900 border border-orange-400 rounded-lg transition duration-200  hover:animate-glow"
                   >
                     Join in
                   </a>
