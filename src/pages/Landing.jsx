@@ -19,6 +19,8 @@ import dart from "../assets/dart.png";
 import { CheckCircle2 } from "lucide-react";
 import { pricingOptions } from "../constants";
 
+
+
 const Landing = () => {
   return (
     <>
@@ -74,16 +76,16 @@ const Landing = () => {
               <div key={index} className="w-full sm:1/2 lg:w-1/2 p-4">
                 <Link
                   to={feature.href}
-                  className="flex rounded-lg border border-neutral-700  shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:border-orange-500 hover:ring-4 hover:ring-orange-500/80 hover:ring-offset-2 hover:ring-offset-neutral-900 hover:animate-glow"
+                  className="flex rounded-lg border border-neutral-700  shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:border-orange-500 hover:ring-4 hover:ring-orange-500/80 hover:ring-offset-2 hover:ring-offset-neutral-900 hover:animate-glow "
                 >
                   <div className="flex mt-5 mx-6 h-[200px] w-[200px] sm:h-[50px] sm:w-[150px] bg-neutral-900 text-orange-700 justify-center items-center rounded">
                     {feature.icon}
                   </div>
                   <div>
-                    <h5 className="mt-4 mb-6 text-2xl underline decoration-orange-700 decoration-2">
+                    <h5 className="mt-4 mb-6 text-4xl bg-gradient-to-r from-orange-400 to-orange-700 text-transparent bg-clip-text dancing-script-aim">
                       {feature.title}{" "}
                     </h5>
-                    <p className="text-md p-2 mb-20 text-neutral-500">
+                    <p className="text-md p-2 mb-20 text-neutral-300">
                       {" "}
                       {feature.description.split("\n").map((line, index) => (
                         <p key={index}>{line.trim()}</p>
@@ -140,16 +142,16 @@ const Landing = () => {
             <div className="flex-col justify-center items-center p-2 mt-32 w-full lg:w-1/2">
               <p className="text-xl p-2 mb-10 text-neutral-500">
                 Our{" "}
-                <span className="underline decoration-orange-700 decoration-2">
+                <span className="bg-gradient-to-r from-orange-400 to-orange-700 text-transparent bg-clip-text dancing-script-aim text-4xl">
                   goal
                 </span>{" "}
-                is to become a global leader in providing cutting-edge
+                 is to become a global leader in providing cutting-edge
                 engineering solutions, AI/ML technologies, cybersecurity, and IT
                 services.
               </p>
               <p className="text-xl p-2 text-neutral-500">
                 By harnessing the power of{" "}
-                <span className="underline decoration-orange-700 decoration-2">
+                <span className=" bg-gradient-to-r from-orange-400 to-orange-700 text-transparent bg-clip-text dancing-script-aim text-4xl">
                   innovation
                 </span>{" "}
                 and delivering reliable, secure solutions, we empower businesses
