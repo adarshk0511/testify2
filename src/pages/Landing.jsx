@@ -48,12 +48,20 @@ const Landing = () => {
             and reliability.
           </p>
           <div className="flex justify-center my-10">
-            <a
+            {/* <a
               href=""
               className="bg-gradient-to-r from-orange-400 to-orange-700 py-3 px-4 mx-3 rounded-md"
             >
               Get started
-            </a>
+            </a> */}
+           <a
+  href=""
+  className="relative bg-gradient-to-r from-orange-400 to-orange-700 py-3 px-6 mx-3 rounded-md text-white font-semibold 
+  shadow-lg transition-all duration-300 ease-in-out hover:scale-105 before:absolute before:inset-0 before:rounded-md 
+  before:border-[3px] before:border-transparent before:animate-glow"
+>
+  Get started
+</a>
           </div>
         </div>
 
@@ -109,7 +117,7 @@ const Landing = () => {
           </h2>
           <div className="flex flex-wrap justify-center">
             <div className="p-2 w-full lg:w-1/2">
-              <img src={hand} alt="" className="mt-10" />
+              <img src={hand} alt="" className="mt-10 hidden sm:block sm:h-[40%] lg:h-[80%] " />
             </div>
             <div className="pt-12 w-full lg:w-1/2">
               {checklistItems.map((items, index) => (
@@ -160,7 +168,7 @@ const Landing = () => {
               </p>
             </div>
             <div className="flex justify-center items-center p-2 w-full lg:w-1/2">
-              <img src={dart} alt="" className="h-[80%] filter brightness-75" />
+              <img src={dart} alt="" className="h-[80%] hidden sm:block filter brightness-75" />
             </div>
           </div>
         </div>

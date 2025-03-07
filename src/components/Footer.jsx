@@ -8,6 +8,7 @@ import {
 import logo from "../assets/logo.png";
 import { features } from "../constants/index";
 import { PhoneCallIcon, MailsIcon, MapPin } from "lucide-react";
+import gradient from "../assets/gradient.jpg";
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
         <div className="h-[200px]">
           <div className="flex items-center flex-shrink-0">
             <img className="h-20 w-26" src={logo} alt="" srcset="" />
-            <span className="text-5xl font-semibold "> Hastrix</span>
+            <span className="text-5xl font-semibold " > Hastrix</span>
           </div>
           <div className="flex text-md mt-5 hidden sm:flex">
             {" "}
