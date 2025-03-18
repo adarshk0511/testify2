@@ -34,10 +34,15 @@ export default {
           '75%': { textShadow: '0 0 10px #ff4500' },
           '100%': { textShadow: '0 0 5px #ff7f50' },
         },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         glow: 'glow 3s infinite linear', // Adjust timing as needed
         glowText: 'glowText 1.5s infinite ease-in-out',
+        marquee: "marquee 15s linear infinite",
       },
     },
   },

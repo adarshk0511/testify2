@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from "react";
+import React,{ useState, useEffect,useRef } from "react";
 
 //Navbar & Footer
 import Navbar from "../components/Navbar";
@@ -18,10 +18,11 @@ import dart from "../assets/dart.png";
 //Price Section
 import { CheckCircle2 } from "lucide-react";
 import { pricingOptions } from "../constants";
-
+import { motion } from "framer-motion";
 
 
 const Landing = () => {
+  //list glow
   const [glowIndex, setGlowIndex] = useState(0);
 
   useEffect(() => {
@@ -31,6 +32,16 @@ const Landing = () => {
 
     return () => clearInterval(interval);
   }, [checklistItems.length]);
+
+  //price carosuel
+  const carouselRef = useRef(null);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
+    }
+  }, []);
 
   return (
     <>
@@ -207,7 +218,7 @@ const Landing = () => {
           <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider">
             Pricing
           </h2>
-          <div className="flex flex-wrap">
+          {/* <div className="flex flex-wrap">
             {pricingOptions.map((option, index) => (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
                 <div className={`p-10 border border-neutral-700 rounded-xl ${option.title == 'Pro' ? "animate-glow-infinite" : "hover:animate-glow" }`}>
@@ -244,7 +255,78 @@ const Landing = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
+          
+          
+          <div>
+      {/* 🖥️ Desktop View */}
+      <div className="hidden lg:block">
+        <div className="flex flex-wrap">
+          {pricingOptions.map((option, index) => (
+            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+              <div className={`p-10 border border-neutral-700 rounded-xl ${
+                option.title === "Pro" ? "animate-glow-infinite" : "hover:animate-glow"
+              }`}>
+                <p className="text-4xl mb-8">{option.title}</p>
+                <p className="mb-8">
+                  <span className="text-5xl mt-6 mr-2">{option.price}</span>
+                  <span className="text-neutral-400 tracking-tight">/Month</span>
+                </p>
+                <ul>
+                  {option.features.map((feature, i) => (
+                    <li key={i} className="mt-8 flex items-center">
+                      <CheckCircle2 />
+                      <span className="ml-2 text-neutral-500">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href="" className="block mt-4 p-3 text-center bg-orange-500 rounded-lg text-white hover:animate-glow">
+                  Join Now
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 📱 Mobile Carousel (Auto-scroll & Swipeable) */}
+      <div className="lg:hidden overflow-hidden w-full">
+        <motion.div 
+          ref={carouselRef} 
+          className="flex space-x-4 flex-nowrap"
+          drag="x"
+          dragConstraints={{ right: width, left: 0 }}
+          animate={{ x: [-width, 0] }}
+          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+        >
+          {pricingOptions.concat(pricingOptions).map((option, index) => (
+            <motion.div 
+              key={index} 
+              className={`min-w-[90%] mt-5 mb-4 p-6 border border-neutral-700 rounded-xl shadow-lg ${
+                option.title === "Pro" ? "animate-glow-infinite" : "hover:animate-glow"
+              }`}
+              whileHover={{ scale: 1.05 }} // Slight pop effect on hover
+            >
+              <p className="text-4xl mb-4">{option.title}</p>
+              <p className="mb-4 text-5xl">{option.price} <span className="text-neutral-400 text-lg">/Month</span></p>
+              <ul>
+                {option.features.map((feature, i) => (
+                  <li key={i} className="mt-2 flex items-center">
+                    <CheckCircle2 />
+                    <span className="ml-2 text-neutral-500">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="" className="block mt-4 p-3 text-center bg-orange-500 rounded-lg text-white hover:animate-glow">
+                Join Now
+              </a>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </div>
+
+
         </div>
         <div className="max-w-7xl mx-auto pt-20 px-6" >
         <Footer />
