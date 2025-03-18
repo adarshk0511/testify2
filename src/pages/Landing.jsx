@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState, useEffect } from "react";
 
 //Navbar & Footer
 import Navbar from "../components/Navbar";
@@ -22,6 +22,16 @@ import { pricingOptions } from "../constants";
 
 
 const Landing = () => {
+  const [glowIndex, setGlowIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setGlowIndex((prevIndex) => (prevIndex + 1) % checklistItems.length);
+    }, 1000); // Change every second
+
+    return () => clearInterval(interval);
+  }, [checklistItems.length]);
+
   return (
     <>
       <Navbar />
@@ -119,7 +129,7 @@ const Landing = () => {
             <div className="p-2 w-full lg:w-1/2">
               <img src={hand} alt="" className="mt-10 hidden sm:block sm:h-[40%] lg:h-[80%] " />
             </div>
-            <div className="pt-12 w-full lg:w-1/2">
+            {/* <div className="pt-12 w-full lg:w-1/2">
               {checklistItems.map((items, index) => (
                 <div key={index} className="flex mb-12">
                   <div className="text-green-400 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center rounded-full">
@@ -133,7 +143,26 @@ const Landing = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
+            <div className="pt-12 w-full lg:w-1/2">
+      {checklistItems.map((items, index) => (
+        <div key={index} className="flex mb-12">
+          <div className="text-green-400 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center rounded-full">
+            <CheckCircle2 />
+          </div>
+          <div>
+          <h5
+  className={`mt-1 mb-2 text-xl transition-all duration-500 ${
+    index === glowIndex ? "text-orange-400 animate-glowText" : ""
+  }`}
+>
+  {items.title}
+</h5>
+            <p className="text-md text-neutral-500">{items.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
           </div>
         </div>
 
