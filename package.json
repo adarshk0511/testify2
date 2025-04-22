@@ -1,7 +1,7 @@
 {
   "homepage": "https://adarshk0511.github.io/testify2/",
   "name": "testify2",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
