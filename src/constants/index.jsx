@@ -81,35 +81,68 @@ export const checklistItems = [
   },
 ];
 
+// export const pricingOptions = [
+//   {
+//     title: "Free",
+//     price: "₹0",
+//     features: [
+//       "Private board sharing",
+//       "5 Gb Storage",
+//       "Web Analytics",
+//       "Private Mode",
+//     ],
+//   },
+//   {
+//     title: "Pro",
+//     price: "₹100",
+//     features: [
+//       "Private board sharing",
+//       "10 Gb Storage",
+//       "Web Analytics (Advance)",
+//       "Private Mode",
+//     ],
+//   },
+//   {
+//     title: "Enterprise",
+//     price: "₹1000",
+//     features: [
+//       "Private board sharing",
+//       "Unlimited Storage",
+//       "High Performance Network",
+//       "Private Mode",
+//     ],
+//   },
+// ];
+
 export const pricingOptions = [
   {
-    title: "Free",
-    price: "$0",
+    title: "Basic",
+    price: "₹0",
     features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
+      "Standard Engineering Templates",
+      "5 GB Secure Cloud Storage",
+      "Basic Project Tracker",
+      "Community Support",
     ],
   },
   {
     title: "Pro",
-    price: "$10",
+    price: "₹100",
     features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
+      "Advanced 3D Modeling Tools",
+      "10 GB Cloud Storage",
+      "AI-Powered Project Insights",
+      "Priority Email Support",
     ],
   },
   {
     title: "Enterprise",
-    price: "$200",
+    price: "₹1000",
     features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
+      "End-to-End Project Management Suite",
+      "Unlimited Storage with High-Security Access",
+      "Custom AI/ML & Cybersecurity Solutions",
+      "Dedicated Account Manager",
     ],
   },
 ];

@@ -105,7 +105,7 @@ const Landing = () => {
               <div key={index} className="w-full sm:1/2 lg:w-1/2 p-4">
                 <Link
                   to={feature.href}
-                  className="flex rounded-lg border border-neutral-700  shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:border-orange-500 hover:ring-4 hover:ring-orange-500/80 hover:ring-offset-2 hover:ring-offset-neutral-900 hover:animate-glow "
+                  className="flex rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-transform duration-300 ease-in-out hover:border-orange-500 hover:ring-4 hover:ring-orange-500/80 hover:ring-offset-2 hover:ring-offset-neutral-900 hover:animate-glow "
                 >
                   <div className="flex mt-5 mx-6 h-[200px] w-[200px] sm:h-[50px] sm:w-[150px] bg-neutral-900 text-orange-700 justify-center items-center rounded">
                     {feature.icon}
