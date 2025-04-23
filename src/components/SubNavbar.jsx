@@ -24,7 +24,7 @@ const SubNavbar = () => {
                         Hastrix
                     </span>
                 </div>
-                <RouterLink to="../testify2" className='hidden lg:flex ml-14 space-x-12'>
+                <RouterLink to="/" className='hidden lg:flex ml-14 space-x-12'>
                     Home
                 </RouterLink>
                 <div className="hidden lg:flex justify-center space-x-12 items-center">
@@ -42,7 +42,7 @@ const SubNavbar = () => {
                 </div>
             </div>
             {mobileDrawerOpen && ( <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-                <Link to="../testify2" className='mt-1 mb-3'>
+                <Link to="/" className='mt-1 mb-3'>
                     Home
                 </Link>
                 <div className='flex space-x-6'>
