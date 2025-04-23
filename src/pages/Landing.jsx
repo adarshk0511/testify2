@@ -45,7 +45,7 @@ const Landing = () => {
 
   //view count in vercel
   useEffect(() => {
-    fetch('https://api.countapi.xyz/hit/testify2.vercel.app/')
+    fetch('https://api.countapi.xyz/hit/testify2-vercel/app')
       .then(res => res.json())
       .then(data => {
         console.log("Page views:", data.value);
