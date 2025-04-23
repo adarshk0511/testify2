@@ -184,7 +184,7 @@ export const serviceLink = [
     title: "IT Solutions",
     description:
       "We offer development and management of IT infrastructure, custom software solutions for engineering and manufacturing, and end-to-end IT support tailored to meet your business requirements.",
-    href: "/testify2/testService",
+    href: "/testService",
     // ele: <TestService/>
   },
   {
@@ -192,7 +192,7 @@ export const serviceLink = [
     title: "Cybersecurity Solutions",
     description:
       "Comprehensive protection against cyber threats through security assessments, risk analysis, continuous monitoring, safeguarding sensitive data, and ensuring compliance.",
-    href: "/testify2/testService",
+    href: "/testService",
     // ele: <TestService/>
   },
   {
@@ -200,7 +200,7 @@ export const serviceLink = [
     title: "Engineering Design & Project Engineering",
     description:
       "We provide customized engineering designs and drafting solutions, comprehensive project engineering support for seamless execution, and specialized expertise in manufacturing equipment for the oil and gas sector and beyond.",
-    href: "/testify2/enggService",
+    href: "/enggService",
     // ele: <EnggService/>
   },
  

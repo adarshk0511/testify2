@@ -64,7 +64,7 @@ const SignUp = () => {
                   </button>
                 </form>
                 <div className="mt-4 text-center">
-                  <a href="/testify2/login" className="text-sm text-blue-500 hover:underline">
+                  <a href="/login" className="text-sm text-blue-500 hover:underline">
                     Already have an account ?
                   </a>
                 </div>

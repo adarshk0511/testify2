@@ -12,23 +12,23 @@ import SignUp from './pages/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/testify2",
+    path: "/",
     element: <Landing />,
   },
   {
-    path: "/testify2/testService",
+    path: "/testService",
     element: <TestService />,
   },
   {
-    path: "/testify2/enggService",
+    path: "/enggService",
     element: <EnggService />,
   },
   {
-    path: "/testify2/login",
+    path: "/login",
     element: <Login/>,
   },
   {
-    path: "/testify2/signup",
+    path: "/signup",
     element: <SignUp/>,
   },
 

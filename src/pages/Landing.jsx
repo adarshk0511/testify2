@@ -280,7 +280,7 @@ const Landing = () => {
                     </li>
                   ))}
                 </ul>
-                <a href="" className="block mt-4 p-3 text-center bg-orange-500 rounded-lg text-white hover:animate-glow">
+                <a href="/signup" className="block mt-4 p-3 text-center bg-orange-500 rounded-lg text-white hover:animate-glow">
                   Join Now
                 </a>
               </div>
@@ -317,7 +317,7 @@ const Landing = () => {
                   </li>
                 ))}
               </ul>
-              <a href="" className="block mt-4 p-3 text-center bg-orange-500 rounded-lg text-white hover:animate-glow">
+              <a href="/signup" className="block mt-4 p-3 text-center bg-orange-500 rounded-lg text-white hover:animate-glow">
                 Join Now
               </a>
             </motion.div>
